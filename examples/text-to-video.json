@@ -1,0 +1,42 @@
+{
+  "name": "Higgsfield text to video example",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "6b1f4b0e-2c4d-4f6a-9a1e-1d2c3b4a5f60",
+      "name": "When clicking Execute workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "resource": "generation",
+        "operation": "generate",
+        "model": "kling-video/v2.5-turbo/pro/text-to-video",
+        "prompt": "Slow dolly shot of a coffee cup on a wooden table, soft morning light, steam rising",
+        "additionalFields": {
+          "klingDuration": 5,
+          "negativePrompt": "blur, text, watermark"
+        },
+        "waitForResult": true,
+        "options": {
+          "downloadFiles": true,
+          "maxWaitMinutes": 15
+        }
+      },
+      "id": "0d9e8f7a-6b5c-4d3e-8f2a-1b0c9d8e7f6a",
+      "name": "Generate Video",
+      "type": "n8n-nodes-higgsfield.higgsfield",
+      "typeVersion": 1,
+      "position": [220, 0]
+    }
+  ],
+  "connections": {
+    "When clicking Execute workflow": {
+      "main": [[{ "node": "Generate Video", "type": "main", "index": 0 }]]
+    }
+  },
+  "pinData": {},
+  "settings": { "executionOrder": "v1" }
+}

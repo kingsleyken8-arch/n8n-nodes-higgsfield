@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "n8n community node for Higgsfield: generate images and videos with Higgsfield AI models",
     "license": "MIT",
-    "homepage": "",
+    "homepage": "https://github.com/kingsleyken8-arch/n8n-nodes-higgsfield#readme",
     "keywords": [
         "n8n-community-node-package",
         "n8n",
@@ -13,11 +13,12 @@
         "video generation"
     ],
     "author": {
-        "name": "Kingsley Ken"
+        "name": "Kingsley Ken",
+        "email": "kingsleyken8@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+        "url": "git+https://github.com/kingsleyken8-arch/n8n-nodes-higgsfield.git"
     },
     "scripts": {
         "build": "n8n-node build",
@@ -50,5 +51,8 @@
     },
     "peerDependencies": {
         "n8n-workflow": "*"
+    },
+    "bugs": {
+        "url": "https://github.com/kingsleyken8-arch/n8n-nodes-higgsfield/issues"
     }
 }
