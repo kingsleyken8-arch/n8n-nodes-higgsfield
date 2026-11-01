@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-higgsfield",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "n8n community node for Higgsfield: generate images and videos with Higgsfield AI models",
     "license": "MIT",
     "homepage": "https://github.com/kingsleyken8-arch/n8n-nodes-higgsfield#readme",
@@ -32,6 +32,9 @@
     "files": [
         "dist"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "n8n": {
         "n8nNodesApiVersion": 1,
         "strict": true,

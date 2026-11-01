@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Marks the package as public so npm can attach the provenance statement on its first publish. No change to the node.
+
 ## 0.1.0
 
 First release.
